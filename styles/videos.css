@@ -62,19 +62,13 @@
     margin-bottom: 30px;
 }
 
-@media(max-width: 750px){
+@media(max-width: 1020px){
     .webpage{
         grid-template-columns: 1fr 1fr;
     }
 }
 
-@media(min-width: 751px) and (max-width: 1500px){
-    .webpage{
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-}
-
-@media(min-width: 1501px){
+@media(min-width: 1021px){
     .webpage{
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
