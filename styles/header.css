@@ -1,0 +1,185 @@
+.header{
+    height: 65px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(228, 228, 228);
+    z-index: 100;
+}
+
+.leftpart{
+    display: flex;
+    align-items: center;
+}
+
+.hamburger{
+    height: 24px;
+    margin-left: 24px;
+    margin-right: 24px;
+    cursor: pointer;
+}
+
+.ytlogo{
+    height: 20px;
+    cursor: pointer;
+}
+
+.middlepart{
+    flex: 1;
+    margin-left: 70px;
+    margin-right: 35px;
+    max-width: 500px;
+    display: flex;
+    align-items: center;
+}
+
+.searchbox{
+    height: 36px;
+    flex: 1;
+    padding-left: 10px;
+    font-size: 16px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(192, 192, 192);
+    border-radius: 2px;
+    box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
+    width: 0;
+}
+
+.searchicon,
+.voicesearch,
+.uploadicon-container,
+.ytappstt,
+.notification-icon-container{
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.searchicon:hover,
+.voicesearch:hover{
+    background-color: rgb(236, 236, 236);
+}
+
+.searchicon .tooltip,
+.voicesearch .tooltip,
+.uploadicon-container .tooltip,
+.ytappstt .tooltip,
+.notification-icon-container .tooltip{
+    font-family: 'Roboto', Arial, sans-serif;
+    position: absolute;
+    bottom: -32px;
+    background-color: gray;
+    color: white;
+    pointer-events: none;
+    padding-top:5px;
+    padding-bottom: 5px;
+    padding-left: 6px;
+    padding-right: 6px;
+    font-size: 13px;
+    opacity: 0;
+    transition: opacity 0.15s;
+    border-radius: 2px;
+    white-space: nowrap;
+}
+
+.searchicon:hover .tooltip,
+.voicesearch:hover .tooltip,
+.uploadicon-container:hover .tooltip,
+.ytappstt:hover .tooltip,
+.notification-icon-container:hover .tooltip{
+    opacity: 1;
+}
+
+.searchbox::placeholder{
+    font-family: Roboto, Arial;
+    font-size: 16px;
+}
+
+.searchicon{
+    width: 66px;
+    height: 40px;
+    background-color: rgn(240 , 240, 240);
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(192, 192, 192);
+    margin-left: -1px;
+    margin-right: 10px;
+}
+
+.searchiconin{
+    height: 25px;
+    
+}
+
+.voicesearch{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: none;
+    background-color: rgb(245, 245, 245);
+}
+
+.voicesearchin{
+    height: 24px;
+    
+}
+
+.rightpart{
+    width: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 20px;
+    flex-shrink: 0;
+}
+
+.upload{
+    height: 24px;
+}
+
+.ytapps{
+    height: 24px;
+}
+
+.notifications{
+    height: 24px;
+}
+
+.notification-icon-container{
+    position: relative;
+}
+
+.notifications-data{
+    position: absolute;
+    top: -2px;
+    right: -5px;
+    background-color: rgb(200, 0, 0);
+    color: rgb(255, 255, 255);
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-radius: 10px;
+    font-size: 11px;
+    font-size: 'Roboto', Arial, sans-serif;
+    border-color: white;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.avatar{
+    height: 32px;
+    border-radius: 16px;
+    object-position: top;
+    cursor: pointer;
+}
