@@ -41,7 +41,6 @@
 }
 
 .searchbox{
-    height: 36px;
     flex: 1;
     padding-left: 10px;
     font-size: 16px;
@@ -107,8 +106,7 @@
 
 .searchicon{
     width: 66px;
-    height: 40px;
-    background-color: rgn(240 , 240, 240);
+    background-color: rgb(240 , 240, 240);
     border-width: 1px;
     border-style: solid;
     border-color: rgb(192, 192, 192);
@@ -182,4 +180,14 @@
     border-radius: 16px;
     object-position: top;
     cursor: pointer;
+}
+
+.searchbox{
+    height: 40px;
+    box-sizing: border-box;
+}
+
+.searchicon{
+    height: 40px;
+    box-sizing: border-box;
 }
